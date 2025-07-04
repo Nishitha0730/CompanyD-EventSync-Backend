@@ -1,4 +1,4 @@
-package com.eventsync.Event.Sync;
+package com.eventsync.event.sync;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
