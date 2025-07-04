@@ -1,7 +1,8 @@
 package com.eventsync.event.sync.dto;
 
-
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -15,24 +16,11 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @AllArgsConstructor
 @NoArgsConstructor
-
-
-public class AddressDto {
+public class PurchaseDto {
 
     private Long id;
-
-    private String street;
-    private String city;
-    private String state;
-    private String country;
-    private String zipCode;
-
-    
-    private UserDto user;
-
-    
+    private BigDecimal totalPrice;
     private LocalDateTime createdAt;
-
-    
+    private List<BookEventDto> bookEventList;
     
 }
